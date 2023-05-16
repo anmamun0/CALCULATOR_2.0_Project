@@ -1,0 +1,17 @@
+This code is an implementation of a simple calculator GUI using the Tkinter library in Python.
+
+The code creates a window and sets its size and title. It also sets the background color to dark gray.
+
+The main logic of the calculator is implemented in the click() function, which takes a parameter called value. This function is called when any of the numeric or operator buttons is clicked. The function appends the clicked value to a global string variable called result and displays the result on a label in the GUI.
+
+The final_result() function evaluates the expression stored in the result variable and displays the result on the GUI label when the equal button is clicked.
+
+The click_on_dot() function is called when the user clicks on the decimal point button. It checks if a decimal point already exists in the current number entered by the user, and if not, appends the decimal point to the current number.
+
+The all_Clear() function is called when the user clicks on the "AC" button. It resets the result variable to an empty string and clears the GUI label.
+
+The remove_click() function is called when the user clicks on the backspace button. It removes the last character from the result variable and updates the GUI label.
+
+The buttons are created using the Button() method of Tkinter, and their properties like background color, font, size, and command function are set as parameters.
+
+Finally, the buttons are packed into frames, and the frames are aligned at the bottom of the window using the pack() method of Tkinter.
